@@ -146,18 +146,47 @@
       </article>
 
       <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
-        <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img />
+        <a href="firefox_logo-only_RGB_400x.png"
+          ><img
+            srcset="
+              firefox_logo-only_RGB_120x.png 120w,
+              firefox_logo-only_RGB_400x.png 400w
+            "
+            sizes="(max-width: 500px) 120px,
+       400px"
+            src="firefox_logo-only_RGB_400x.png"
+            alt="Firefox logo"
+          />
         </a>
-        <a href="https://www.mozilla.org/">
-          <img />
+
+        <a href="mozilla-dinosaur-head.png">
+          <img
+            srcset="
+              mozilla-dinosaur-head-120x.png  120w,
+              mozilla-dinosaur-head-400px.png 400w
+            "
+            sizes="(max-width: 500px) 120px,
+   400px"
+            src="mozilla-dinosaur-head-400px.png"
+            alt="Mozilla dinosaur"
+          />
         </a>
-        <a href="https://addons.mozilla.org/">
-          <img />
+
+        <a href="firefox-addons.jpg">
+          <img
+            srcset="
+              firefox-addons-120px.jpg 120w,
+              firefox-addons-400px.jpg 400w
+            "
+            sizes="(max-width: 500px) 120px,
+   400px"
+            src="firefox-addons-400px.jpg"
+            alt="Firefox addons logo"
+          />
         </a>
-        <a href="https://developer.mozilla.org/en-US/">
-          <img />
+
+        <a href="mdn.svg">
+          <img src="mdn.svg" alt="An image of a dinosaur head" />
         </a>
         <div class="clearfix"></div>
       </div>
