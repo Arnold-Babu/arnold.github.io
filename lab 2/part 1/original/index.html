@@ -109,8 +109,12 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
+      <a href="firefox_logo-only_RGB_120x.png">
+        <img
+          src="firefox_logo-only_RGB_120x.png"
+          alt="A small image of firefox logo"
+        />
+      </a>
     </header>
 
     <main>
@@ -146,6 +150,7 @@
       </article>
 
       <div class="further-info">
+        <!-- insert images with srcsets and sizes -->
         <a href="firefox_logo-only_RGB_400x.png"
           ><img
             srcset="
@@ -153,7 +158,7 @@
               firefox_logo-only_RGB_400x.png 400w
             "
             sizes="(max-width: 500px) 120px,
-       400px"
+           400px"
             src="firefox_logo-only_RGB_400x.png"
             alt="Firefox logo"
           />
@@ -166,7 +171,7 @@
               mozilla-dinosaur-head-400px.png 400w
             "
             sizes="(max-width: 500px) 120px,
-   400px"
+       400px"
             src="mozilla-dinosaur-head-400px.png"
             alt="Mozilla dinosaur"
           />
@@ -179,7 +184,7 @@
               firefox-addons-400px.jpg 400w
             "
             sizes="(max-width: 500px) 120px,
-   400px"
+       400px"
             src="firefox-addons-400px.jpg"
             alt="Firefox addons logo"
           />
@@ -188,11 +193,16 @@
         <a href="mdn.svg">
           <img src="mdn.svg" alt="An image of a dinosaur head" />
         </a>
+
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
+        <picture>
+          <source media="(max-width: 600ppx)" srcset="red-panda-600.jpg" />
+          <source media="min-width: 800px" srcset="red-panda-1200.jpg" />
+          <img src="red-panda-1200.jpg" alt="An image of a red panda" />
+        </picture>
       </div>
     </main>
   </body>
